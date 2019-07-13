@@ -2,13 +2,27 @@
   margin-top: -50px
   padding-top: 131px
   padding-bottom: 142px
-  background: url("../img/banner.jpg") no-repeat
+  background: url("../img/banner.jpg") no-repeat center center
+  @include media('<tablet')
+    padding-top: 100px
+    padding-bottom: 80px
+    background-size: cover
+  @include media('<iphone')
+    margin-top: 0
+    padding: 60px 0
 
   &__tile
     width: 70%
     margin: 0 auto
     padding: 45px 47px 70px
     background: transparentize($accent-color, .5)
+    @include media('<phablet')
+      padding: 30px 40px 30px
+    @include media('<phone')
+      width: 90%
+    @include media('<iphone')
+      width: 100%
+      padding: 30px 0
 
   &__text
     @include font-size(45.87)
@@ -17,3 +31,12 @@
     color: #fff
     text-align: center
     text-transform: uppercase
+    @include media('<phablet')
+      @include font-size(32)
+      @include line-height(40)
+    @include media('<tablet')
+      @include font-size(24)
+      @include line-height(32)
+    @include media('<iphone')
+      @include font-size(20)
+      @include line-height(22)

@@ -7,11 +7,16 @@
     @include line-height(25)
     color: $dark-blue-color
     text-align: center
+    @include media('<iphone')
+      @include font-size(16)
+      @include line-height(18)
 
   &__wrapper
     display: flex
     justify-content: center
     align-items: center
+    @include media('<tablet')
+      flex-direction: column
 
   &__input
     width: 195px
@@ -20,6 +25,10 @@
     border: 1px solid #595959
     @include font-size(14)
     @include line-height(20)
+    @include media('<tablet')
+      width: 223px
+      margin-right: 0
+      margin-bottom: 15px
 
   &__button
     padding: 10px 30px

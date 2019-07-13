@@ -5,15 +5,23 @@
   &__top
     display: flex
     justify-content: space-between
+    align-items: center
     padding: 23px
+    @include media('<iphone')
+      flex-direction: column
 
   &__bottom
     display: flex
     justify-content: space-between
     padding: 0 23px
+    @include media('<iphone')
+      flex-direction: column
+      align-items: center
 
   &__contact
     padding-right: 15px
+    @include media('<iphone')
+      padding-right: 0
 
     &__text
       @include font-size(14)
@@ -26,7 +34,15 @@
     @include font-size(14)
     font-family: 'Segoe UI Light', 'Segoe UI', Helvetica, Arial, sans-serif
     font-weight: 300
+    @include media('<iphone')
+      margin-bottom: 10px
 
   &__politic
     @include font-size(14)
     text-decoration: underline
+
+  &__logo
+
+    &__img
+      @include media('<phablet')
+        max-width: 200px
