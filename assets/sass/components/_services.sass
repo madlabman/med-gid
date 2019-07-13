@@ -1,0 +1,65 @@
+.services
+
+  &__grid
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    padding-top: 24px
+    //align-items: flex-end
+
+    &__item
+      display: flex
+      flex-direction: column
+      max-width: 170px
+      margin: 0 20px 40px
+
+      &:before
+        content: ''
+        display: block
+        height: 102px
+        background-repeat: no-repeat
+        background-position: center center
+
+      &--1:before
+        background-image: url("../img/icon-1.png")
+      &--2:before
+        background-image: url("../img/icon-2.png")
+      &--3:before
+        width: 115px
+        background-image: url("../img/icon-3.png")
+      &--4:before
+        background-image: url("../img/icon-4.png")
+      &--5:before
+        background-image: url("../img/icon-5.png")
+      &--6:before
+        background-image: url("../img/icon-6.png")
+      &--7:before
+        width: 116px
+        background-image: url("../img/icon-7.png")
+      &--8:before
+        background-image: url("../img/icon-8.png")
+      &--9:before
+        width: 93px
+        background-image: url("../img/icon-9.png")
+      &--10:before
+        background-image: url("../img/icon-10.png")
+      &--11:before
+        background-image: url("../img/icon-11.png")
+      &--12:before
+        background-image: url("../img/icon-12.png")
+      &--13:before
+        background-image: url("../img/icon-13.png")
+      &--14:before
+        background-image: url("../img/icon-14.png")
+      &--15:before
+        background-image: url("../img/icon-15.png")
+      &--16:before
+        background-image: url("../img/icon-16.png")
+      &--17:before
+        background-image: url("../img/icon-17.png")
+
+
+    &__title
+      padding-top: 4px
+      @include font-size(18)
+      text-align: center

@@ -1,0 +1,33 @@
+.form
+  padding-bottom: 31px
+
+  &__title
+    padding-bottom: 11px
+    @include font-size(19)
+    @include line-height(25)
+    color: $dark-blue-color
+    text-align: center
+
+  &__wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+
+  &__input
+    width: 195px
+    margin-right: 16px
+    padding: 8px 15px
+    border: 1px solid #595959
+    @include font-size(14)
+    @include line-height(20)
+
+  &__button
+    padding: 10px 30px
+    border: none
+    background: $accent-color
+    @include font-size(14)
+    color: #fefefe
+    cursor: pointer
+
+    &:hover
+      text-decoration: underline

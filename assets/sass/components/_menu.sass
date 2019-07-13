@@ -1,0 +1,28 @@
+.menu
+  position: relative
+  background: transparentize($dark-blue-color, .2)
+
+  &__list
+    display: flex
+    justify-content: center
+
+  &__item
+    $item: &
+    display: flex
+    padding: 14px 0
+
+    &:not(:last-child):after
+      content: ''
+      display: inline-block
+      width: 1px
+      height: 22px
+      background: #fff
+
+    &__link
+      padding: 0 82px
+      @include font-size(16)
+      @include line-height(22)
+      color: #fff
+
+      &:hover
+        text-decoration: underline

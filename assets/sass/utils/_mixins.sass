@@ -1,0 +1,20 @@
+@function calc-in-rem($size)
+  @return ($size / $base-font-size)
+
+@mixin font-size($size)
+  font-size: $size * 1px // fallback
+  font-size: calc-in-rem($size) * 1rem
+
+@mixin line-height($size)
+  line-height: $size * 1px // fallback
+  line-height: calc-in-rem($size) * 1rem
+
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content

@@ -1,0 +1,37 @@
+{
+  "name": "med-gid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "chtotonetak",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "browser-sync": "^2.26.7",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-cache": "^1.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-flatten": "^0.4.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-load-plugins": "^2.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "include-media": "^1.4.9",
+    "run-sequence": "^2.2.1"
+  },
+  "browserslist": [
+    "last 8 versions",
+    "android 4",
+    "opera 12"
+  ]
+}

@@ -1,0 +1,32 @@
+.footer
+  border-top: 7px solid $accent-color
+  padding-bottom: 50px
+
+  &__top
+    display: flex
+    justify-content: space-between
+    padding: 23px
+
+  &__bottom
+    display: flex
+    justify-content: space-between
+    padding: 0 23px
+
+  &__contact
+    padding-right: 15px
+
+    &__text
+      @include font-size(14)
+      @include line-height(20)
+      font-family: 'Segoe UI Light', 'Segoe UI', Helvetica, Arial, sans-serif
+      font-weight: 300
+      text-align: center
+
+  &__copyright
+    @include font-size(14)
+    font-family: 'Segoe UI Light', 'Segoe UI', Helvetica, Arial, sans-serif
+    font-weight: 300
+
+  &__politic
+    @include font-size(14)
+    text-decoration: underline

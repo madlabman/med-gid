@@ -1,0 +1,20 @@
+.container
+  position: relative
+  width: 100%
+  max-width: 995px
+  margin: 0 auto
+  @include media('>laptop', '<desktop')
+    max-width: 960px
+  @include media('<laptop')
+    max-width: 768px
+    padding-right: 30px
+  @include media('<tablet')
+    max-width: 640px
+  @include media('<phone')
+    max-width: 90%
+  @include media('<=iphone')
+    max-width: unset
+    margin-left: 0
+    margin-right: 0
+    padding-right: 0
+    padding-left: 0

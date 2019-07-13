@@ -1,0 +1,112 @@
+doctype
+html(lang="ru")
+    head
+        title Мед-Гид
+        meta(name="viewport" content="width=device-width")
+        link(rel="stylesheet" href="./css/styles.css")
+    body
+        header.header
+            .container
+                .header__wrapper
+                    .header__title
+                        .header__title__logo
+                            img(src="./img/logo.png" alt="med-gid-logo").header__logo__img
+                        .header__title__text
+                            span Ваш персональный гид<br> в сфере медицинских услуг
+                    .header__contact
+                        .header__phone
+                            a(href="tel:88512995585") +7 (8512) 99-55-85
+                        button(type="button").header__form-button Заказать обратный звонок
+        nav.menu
+            .container
+                ul.menu__list
+                    li.menu__item
+                        a(href="#").menu__item__link О нас
+                    li.menu__item
+                        a(href="#").menu__item__link Услуги
+                    li.menu__item
+                        a(href="#").menu__item__link Отделения
+                    li.menu__item
+                        a(href="#").menu__item__link Контакты
+        section.banner
+            .container
+                .banner__tile
+                    .banner__text Мы покажем вам короткий путь к&nbsp;постановке диагноза и правильному лечению
+        section#about.section.about
+            .container
+                h2.section__title О нас
+                .about__text-wrapper
+                    p.section__text Наша задача - проконсультировать пациента, проинформировать его о возможных вариантах и, в зависимости от его предполагаемого диагноза, помочь с выбором клиники для лечения в г. Астрахани. Иными словами, человек обращается в “Мед-Гид.рф” с предварительным диагнозом (или просто с желанием обследоваться), а персонал компании совместно с пациентом подбирает ему оптимальный вариант обследования и лечения в медицинских организациях, с которыми заключены договора.  Обратите внимание , все звонки у нас принимает оператор с дипломом врача.
+                form(action="#").form
+                    p.form__title Консультация по телефону бесплатно!
+                    .form__wrapper
+                        input(type="text" placeholder="Ваше имя").form__input
+                        input(type="text" placeholder="Ваш телефон").form__input
+                        button(type="submit").form__button Получить консультацию
+        section#services.section.services
+            .container
+                h2.section__title Услуги
+                .services__text-wrapper
+                    p.section__text Мы поможем определиться с чего начать обследование, консультация каких специалистов необходима, в том числе, и по телефону <span class="section__text--accent"><a href="tel:88512995585">+7 (8512) 99-55-85</a></span>. Поможем спланировать медицинскую поездку, и организовать предварительные консультации с ведущими врачами в конкретном направлении в г. Астрахани. Заранее проинформируем о примерной стоимости и программе лечения: график назначения консультаций, диагностики и проведения необходимых процедур.
+                .services__grid
+                    .services__grid__item.services__grid__item--1
+                        p.services__grid__title Терапевтия
+                    .services__grid__item.services__grid__item--2
+                        p.services__grid__title Неврология
+                    .services__grid__item.services__grid__item--3
+                        p.services__grid__title Гинекология
+                    .services__grid__item.services__grid__item--4
+                        p.services__grid__title Офтальмология
+                    .services__grid__item.services__grid__item--5
+                        p.services__grid__title Отоларинголог
+                    .services__grid__item.services__grid__item--6
+                        p.services__grid__title Гастроэнтерология
+                    .services__grid__item.services__grid__item--7
+                        p.services__grid__title Урология
+                    .services__grid__item.services__grid__item--8
+                        p.services__grid__title Эндокринология
+                    .services__grid__item.services__grid__item--9
+                        p.services__grid__title Онкология
+                    .services__grid__item.services__grid__item--10
+                        p.services__grid__title Кардиология
+                    .services__grid__item.services__grid__item--11
+                        p.services__grid__title Дерматология
+                    .services__grid__item.services__grid__item--12
+                        p.services__grid__title Косметология
+                    .services__grid__item.services__grid__item--13
+                        p.services__grid__title Пластическая хирургия
+                    .services__grid__item.services__grid__item--14
+                        p.services__grid__title Стоматология
+                    .services__grid__item.services__grid__item--15
+                        p.services__grid__title Эндоскопия
+                    .services__grid__item.services__grid__item--16
+                        p.services__grid__title Функциональная диагностика
+                    .services__grid__item.services__grid__item--17
+                        p.services__grid__title Лечение зубов под&nbsp;наркозом взрослым и детям
+        section#contact.section.contact
+            .container
+                h2.section__title Контакты
+                .contact__wrapper
+                    .contact__text
+                        | Адрес: Россия, г. Астрахань<br>
+                        | ул. Боевая 132 Н<br>
+                        | Тел.: +7 (8512) 99-55-85<br>
+                        | Почта: med-gid.rf@yandex.ru
+                    .contact__map
+                        <iframe src="https://yandex.ru/map-widget/v1/-/CCsbuEnV" width="560" height="360" frameborder="1" allowfullscreen="true"></iframe>
+        footer.footer
+            .container
+                .footer__top
+                    .footer__logo
+                        img(src="./img/logo.png" alt="med-gid-logo").footer__logo__img
+                    .footer__contact
+                        .footer__contact__text
+                            | Адрес: Россия, г. Астрахань<br>
+                            | ул. Боевая 132 Н<br>
+                            | Тел.: +7 (8512) 99-55-85<br>
+                            | Почта: med-gid.rf@yandex.ru
+                .footer__bottom
+                    p.footer__copyright © 2019 “Мед-Гид.рф”. Все права защищены
+                    a(href="#").footer__politic Политика конфинденциальности
+
+    script(src="./js/build.js")
