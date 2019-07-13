@@ -37,7 +37,7 @@ html(lang="ru")
                 h2.section__title О нас
                 .about__text-wrapper
                     p.section__text Наша задача - проконсультировать пациента, проинформировать его о возможных вариантах и, в зависимости от его предполагаемого диагноза, помочь с выбором клиники для лечения в г. Астрахани. Иными словами, человек обращается в “Мед-Гид.рф” с предварительным диагнозом (или просто с желанием обследоваться), а персонал компании совместно с пациентом подбирает ему оптимальный вариант обследования и лечения в медицинских организациях, с которыми заключены договора.  Обратите внимание , все звонки у нас принимает оператор с дипломом врача.
-                form(action="#").form
+                .form
                     p.form__title Консультация по телефону бесплатно!
                     .form__wrapper
                         input(type="text" placeholder="Ваше имя").form__input
@@ -108,5 +108,27 @@ html(lang="ru")
                 .footer__bottom
                     p.footer__copyright © 2019 “Мед-Гид.рф”. Все права защищены
                     a(href="#").footer__politic Политика конфинденциальности
+        .modal.modal--healing(style="display: none")
+            img.modal__img(src="./img/tooth.png" alt="tooth")
+            p.modal__title
+                | лечение зубов<br>
+                | под наркозом<br>
+                | взрослым и детям
+            .modal__form
+                input(type="text" placeholder="Ваше имя").modal__input
+                input(type="text" placeholder="Ваш телефон").modal__input
+                button(type="submit").modal__button Получить консультацию
+            span.modal__close Закрыть
+        .modal.modal--contact(style="display: none")
+            p.modal__title Заполните Ваши данные, и&nbsp;наши&nbsp;специалисты свяжутся с Вами:
+            .modal__form
+                input(type="text" placeholder="Ваше имя").modal__input
+                input(type="text" placeholder="Ваш телефон").modal__input
+                button(type="submit").modal__button Получить консультацию
+            span.modal__close Закрыть
+        .modal.modal--thanks(style="display: none")
+            p.modal__title Благодарим за оставленную заявку!
+            p.modal__text Наши специалисты свяжутся с Вами в ближайшее время.
+            span.modal__close Закрыть
 
     script(src="./js/build.js")
