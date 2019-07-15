@@ -5,7 +5,8 @@
   "author": "chtotonetak",
   "license": "MIT",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "build": "gulp build"
   },
   "devDependencies": {
     "@babel/core": "^7.5.4",
@@ -14,6 +15,7 @@
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",
+    "gulp-browserify": "^0.5.1",
     "gulp-cache": "^1.1.2",
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
@@ -33,5 +35,6 @@
     "last 8 versions",
     "android 4",
     "opera 12"
-  ]
+  ],
+  "dependencies": {}
 }
