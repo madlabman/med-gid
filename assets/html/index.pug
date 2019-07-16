@@ -16,7 +16,7 @@ html(lang="ru")
                     .header__contact
                         .header__phone
                             a(href="tel:88512995585") +7 (8512) 99-55-85
-                        button(type="button").header__form-button Заказать обратный звонок
+                        a(href="#modal-contact")#open-modal-contact.header__form-button Заказать обратный звонок
         nav.menu
             .container
                 ul.menu__list
@@ -108,25 +108,26 @@ html(lang="ru")
                 .footer__bottom
                     p.footer__copyright © 2019 “Мед-Гид.рф”. Все права защищены
                     a(href="#").footer__politic Политика конфинденциальности
-        .modal.modal--healing(style="display: none")
-            img.modal__img(src="./img/tooth.png" alt="tooth")
-            p.modal__title
-                | лечение зубов<br>
-                | под наркозом<br>
-                | взрослым и детям
-            .modal__form
-                input(type="text" placeholder="Ваше имя").modal__input
-                input(type="text" placeholder="Ваш телефон").modal__input
-                button(type="submit").modal__button Получить консультацию
-            span.modal__close Закрыть
-        .modal.modal--contact(style="display: none")
+        #modal-healing.modal.modal--healing(style="display: none")
+            .modal__content
+                img.modal__img(src="./img/tooth.png" alt="tooth")
+                p.modal__title
+                    | лечение зубов<br>
+                    | под наркозом<br>
+                    | взрослым и детям
+                .modal__form
+                    input(type="text" placeholder="Ваше имя").modal__input
+                    input(type="text" placeholder="Ваш телефон").modal__input
+                    button(type="submit").modal__button Получить консультацию
+                span.modal__close Закрыть
+        #modal-contact.modal.modal--contact(style="display: none")
             p.modal__title Заполните Ваши данные, и&nbsp;наши&nbsp;специалисты свяжутся с Вами:
             .modal__form
                 input(type="text" placeholder="Ваше имя").modal__input
                 input(type="text" placeholder="Ваш телефон").modal__input
                 button(type="submit").modal__button Получить консультацию
             span.modal__close Закрыть
-        .modal.modal--thanks(style="display: none")
+        #modal-thanks.modal.modal--thanks(style="display: none")
             p.modal__title Благодарим за оставленную заявку!
             p.modal__text Наши специалисты свяжутся с Вами в ближайшее время.
             span.modal__close Закрыть

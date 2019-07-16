@@ -3,7 +3,7 @@ const gulpLoadPlugins   = require('gulp-load-plugins')
 
 const babel             = require('gulp-babel')
 const browserSync       = require('browser-sync').create()
-const browserify	= require('gulp-browserify')
+const browserify        = require('gulp-browserify')
 const del               = require('del')
 const runSequence       = require('run-sequence')
 
@@ -49,7 +49,7 @@ const jsTask = () => {
     return gulp.src('./assets/js/**/*.js')
         .pipe($.plumber())
         .pipe(babel())
-	.pipe(browserify())
+        .pipe(browserify())
         .pipe($.if(!dev, $.uglify()))
         .pipe($.concat('build.js'))
         .pipe(gulp.dest('./dist/js'))
