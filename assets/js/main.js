@@ -45,6 +45,7 @@ window.onload = function () {
     }
 
     setTimeout(function () {
+        toggleModal()
         toggleModal('modal-healing')
     }, 15000)
 }

@@ -19,7 +19,7 @@
 
     &:not(:last-child)
       @include media('<iphone')
-        border-bottom: 1px solid #fff
+        border-bottom: 1px solid lighten($dark-blue-color, 60%)
 
     &:not(:last-child):after
       content: ''
@@ -30,15 +30,15 @@
       @include media('<iphone')
         display: none
 
-    &__link
-      padding: 0 82px
-      @include font-size(16)
-      @include line-height(22)
-      color: #fff
-      @include media('<phablet')
-        padding: 0 42px
-      @include media('<phone')
-        padding: 0 30px
+  &__link
+    padding: 0 82px
+    @include font-size(16)
+    @include line-height(22)
+    color: #fff
+    @include media('<phablet')
+      padding: 0 42px
+    @include media('<phone')
+      padding: 0 30px
 
-      &:hover
-        text-decoration: underline
+    &:hover
+      text-decoration: underline

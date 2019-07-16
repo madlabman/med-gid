@@ -23,16 +23,16 @@
     @include media('<iphone')
       padding-right: 0
 
-    &__text
-      @include font-size(14)
-      @include line-height(20)
-      font-family: 'Segoe UI Light', 'Segoe UI', Helvetica, Arial, sans-serif
-      font-weight: 300
-      text-align: center
+  &__text
+    @include font-size(14)
+    @include line-height(20)
+    font-family: $segoeui-sl-font-family
+    font-weight: 300
+    text-align: center
 
   &__copyright
     @include font-size(14)
-    font-family: 'Segoe UI Light', 'Segoe UI', Helvetica, Arial, sans-serif
+    font-family: $segoeui-sl-font-family
     font-weight: 300
     @include media('<iphone')
       margin-bottom: 10px

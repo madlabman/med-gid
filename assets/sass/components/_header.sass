@@ -21,33 +21,33 @@
     @include media('<iphone')
       flex-direction: column
 
-    &__logo
-      margin-right: 28px
-      padding-right: 30px
-      border-right: 1px solid #555
-      @include media('<tablet')
-        border: none
-      @include media('<iphone')
-        padding: 0
-        margin: 0
+  &__logo
+    margin-right: 28px
+    padding-right: 30px
+    border-right: 1px solid #555
+    @include media('<tablet')
+      border: none
+    @include media('<iphone')
+      padding: 0
+      margin: 0
 
-      &__img
-        @include media('<phablet')
-          max-width: 200px
+  &__img
+    @include media('<phablet')
+      max-width: 200px
 
-    &__text
-      padding-bottom: 12px
-      @include font-size(20)
-      @include line-height(25.79)
-      color: #264388
-      @include media('<phablet')
-        @include font-size(16)
-        @include line-height(18)
-      @include media('<tablet')
-        display: none
-      @include media('<iphone')
-        display: block
-        text-align: center
+  &__text
+    padding-bottom: 12px
+    @include font-size(20)
+    @include line-height(25.79)
+    color: #264388
+    @include media('<phablet')
+      @include font-size(16)
+      @include line-height(18)
+    @include media('<tablet')
+      display: none
+    @include media('<iphone')
+      display: block
+      text-align: center
 
   &__contact
     display: flex
@@ -57,7 +57,7 @@
 
   &__phone
     padding: 0 4px 22px
-    font-family: 'Segoe UI Semilight', 'Segoe UI', Helvetica, Arial, sans-serif
+    font-family: $segoeui-sl-font-family
     font-weight: 400
     @include font-size(25.77)
     white-space: nowrap
@@ -69,10 +69,11 @@
     display: flex
     align-items: center
     justify-content: center
-    padding: 7px
+    padding: 7px 14px
     background: $accent-color
     border: none
     color: #fefefe
+    @include font-size(14)
     cursor: pointer
     @include media('<tablet')
       padding: 7px 10px
