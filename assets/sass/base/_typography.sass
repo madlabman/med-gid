@@ -1,7 +1,28 @@
+@font-face
+  font-family: 'segoeui'
+  src: url('../fonts/segoeui.eot')
+  src: url('../fonts/segoeui.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/segoeui.woff2') format('woff2'),
+  url('../fonts/segoeui.woff') format('woff'),
+  url('../fonts/segoeui.ttf') format('truetype'),
+  url('../fonts/segoeui.svg#segoeui') format('svg'),
+  local('Segoe UI')
+  font-weight: 400
+
+@font-face
+  font-family: 'segoeui-sl'
+  src: url('../fonts/segoeuil.eot')
+  src: url('../fonts/segoeuil.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/segoeuil.woff2') format('woff2'),
+  url('../fonts/segoeuil.woff') format('woff'),
+  url('../fonts/segoeuil.ttf') format('truetype'),
+  url('../fonts/segoeuil.svg#segoeuil') format('svg'),
+  local('Segoe UI Semilight')
+  font-weight: 300
+
 html,
 body
-  font-family: 'Segoe UI', Helvetica, Arial, sans-serif
+  font-family: $segoeui-font-family
   font-size: $base-font-size * 1px
   font-weight: 400
-  //@include font-smoothing()
   color: $main-color

@@ -10,9 +10,9 @@ html(lang="ru")
             .container
                 .header__wrapper
                     .header__title
-                        .header__title__logo
-                            img(src="./img/logo.png" alt="med-gid-logo").header__title__logo__img
-                        .header__title__text
+                        .header__logo
+                            img(src="./img/logo.png" alt="med-gid-logo").header__img
+                        .header__text
                             span Ваш персональный гид<br> в сфере медицинских услуг
                     .header__contact
                         .header__phone
@@ -22,13 +22,13 @@ html(lang="ru")
             .container
                 ul.menu__list
                     li.menu__item
-                        a(href="#").menu__item__link О нас
+                        a(href="#about").menu__link О нас
                     li.menu__item
-                        a(href="#").menu__item__link Услуги
+                        a(href="#services").menu__link Услуги
                     li.menu__item
-                        a(href="#").menu__item__link Отделения
+                        a(href="#departs").menu__link Отделения
                     li.menu__item
-                        a(href="#").menu__item__link Контакты
+                        a(href="#contact").menu__link Контакты
         section.banner
             .container
                 .banner__tile
@@ -49,41 +49,41 @@ html(lang="ru")
                 h2.section__title Услуги
                 .services__text-wrapper
                     p.section__text Мы поможем определиться с чего начать обследование, консультация каких специалистов необходима, в том числе, и по телефону <span class="section__text--accent"><a href="tel:88512995585">+7&nbsp;(8512)&nbsp;99-55-85</a></span>. Поможем спланировать медицинскую поездку, и организовать предварительные консультации с ведущими врачами в конкретном направлении в г. Астрахани. Заранее проинформируем о примерной стоимости и программе лечения: график назначения консультаций, диагностики и проведения необходимых процедур.
-                .services__grid
-                    .services__grid__item.services__grid__item--1
-                        p.services__grid__title Терапевтия
-                    .services__grid__item.services__grid__item--2
-                        p.services__grid__title Неврология
-                    .services__grid__item.services__grid__item--3
-                        p.services__grid__title Гинекология
-                    .services__grid__item.services__grid__item--4
-                        p.services__grid__title Офтальмология
-                    .services__grid__item.services__grid__item--5
-                        p.services__grid__title Отоларинголог
-                    .services__grid__item.services__grid__item--6
-                        p.services__grid__title Гастроэнтерология
-                    .services__grid__item.services__grid__item--7
-                        p.services__grid__title Урология
-                    .services__grid__item.services__grid__item--8
-                        p.services__grid__title Эндокринология
-                    .services__grid__item.services__grid__item--9
-                        p.services__grid__title Онкология
-                    .services__grid__item.services__grid__item--10
-                        p.services__grid__title Кардиология
-                    .services__grid__item.services__grid__item--11
-                        p.services__grid__title Дерматология
-                    .services__grid__item.services__grid__item--12
-                        p.services__grid__title Косметология
-                    .services__grid__item.services__grid__item--13
-                        p.services__grid__title Пластическая хирургия
-                    .services__grid__item.services__grid__item--14
-                        p.services__grid__title Стоматология
-                    .services__grid__item.services__grid__item--15
-                        p.services__grid__title Эндоскопия
-                    .services__grid__item.services__grid__item--16
-                        p.services__grid__title Функциональная диагностика
-                    .services__grid__item.services__grid__item--17
-                        p.services__grid__title Лечение зубов под&nbsp;наркозом взрослым и детям
+                #departs.services__grid
+                    .services__item.services__item--1
+                        p.services__title Терапевтия
+                    .services__item.services__item--2
+                        p.services__title Неврология
+                    .services__item.services__item--3
+                        p.services__title Гинекология
+                    .services__item.services__item--4
+                        p.services__title Офтальмология
+                    .services__item.services__item--5
+                        p.services__title Отоларинголог
+                    .services__item.services__item--6
+                        p.services__title Гастроэнтерология
+                    .services__item.services__item--7
+                        p.services__title Урология
+                    .services__item.services__item--8
+                        p.services__title Эндокринология
+                    .services__item.services__item--9
+                        p.services__title Онкология
+                    .services__item.services__item--10
+                        p.services__title Кардиология
+                    .services__item.services__item--11
+                        p.services__title Дерматология
+                    .services__item.services__item--12
+                        p.services__title Косметология
+                    .services__item.services__item--13
+                        p.services__title Пластическая хирургия
+                    .services__item.services__item--14
+                        p.services__title Стоматология
+                    .services__item.services__item--15
+                        p.services__title Эндоскопия
+                    .services__item.services__item--16
+                        p.services__title Функциональная диагностика
+                    .services__item.services__item--17
+                        p.services__title Лечение зубов под&nbsp;наркозом взрослым и детям
         section#contact.section.contact
             .container
                 h2.section__title Контакты
@@ -101,7 +101,7 @@ html(lang="ru")
                     .footer__logo
                         img(src="./img/logo.png" alt="med-gid-logo").footer__logo__img
                     .footer__contact
-                        .footer__contact__text
+                        .footer__text
                             | Адрес: Россия, г. Астрахань<br>
                             | ул. Боевая 132 Н<br>
                             | Тел.: +7 (8512) 99-55-85<br>
@@ -132,5 +132,6 @@ html(lang="ru")
             p.modal__title Благодарим за оставленную заявку!
             p.modal__text Наши специалисты свяжутся с Вами в ближайшее время.
             span.modal__close Закрыть
+        .scroll-to-top Наверх
 
     script(src="./js/build.js")

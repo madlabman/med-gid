@@ -23,7 +23,7 @@ window.onload = function () {
             }
         } else {
             removeOverlay()
-            var dialogs = document.getElementsByClassName('modal')
+            var dialogs = document.querySelectorAll('.modal')
             for (var i = 0; i < dialogs.length; i++) {
                 dialogs.item(i).style.display = 'none'
             }
@@ -36,7 +36,7 @@ window.onload = function () {
             toggleModal('modal-contact')
         })
 
-    var buttons = document.getElementsByClassName('modal__close')
+    var buttons = document.querySelectorAll('.modal__close')
     for (var i = 0; i < buttons.length; i++) {
         buttons.item(i).addEventListener('click', function (e) {
             e.preventDefault()
@@ -45,6 +45,14 @@ window.onload = function () {
     }
 
     setTimeout(function () {
+        toggleModal()
         toggleModal('modal-healing')
     }, 15000)
+
+    document.querySelector('.scroll-to-top')
+        .addEventListener('click', function (e) {
+            e.preventDefault()
+            document.body.scrollTop = 0
+            document.documentElement.scrollTop = 0
+        })
 }

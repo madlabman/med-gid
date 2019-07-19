@@ -1,0 +1,26 @@
+.scroll-to-top
+  position: fixed
+  bottom: 20%
+  right: 20%
+  text-transform: uppercase
+  color: $gray-color
+  cursor: pointer
+  @include media('<laptop')
+    display: none
+
+  &:before,
+  &:after
+    content: ''
+    position: absolute
+    top: 4px
+    width: 2px
+    height: 12px
+    background: $gray-color
+
+  &:before
+    transform: rotate(30deg)
+    left: -14px
+
+  &:after
+    transform: rotate(-30deg)
+    left: -8px
