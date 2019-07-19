@@ -5,6 +5,7 @@ html(lang="ru")
         meta(name="viewport" content="width=device-width")
         meta(charset="UTF-8")
         link(rel="stylesheet" href="./css/styles.css")
+        script(src="./js/build.js")
     body
         header.header
             .container
@@ -117,15 +118,15 @@ html(lang="ru")
                     | под наркозом<br>
                     | взрослым и детям
                 .modal__form
-                    input(type="text" placeholder="Ваше имя").modal__input
-                    input(type="text" placeholder="Ваш телефон").modal__input
+                    input(type="text" placeholder="Ваше имя" name="name").modal__input
+                    input(type="text" placeholder="Ваш телефон" name="phone").modal__input
                     button(type="submit").modal__button Получить консультацию
                 span.modal__close Закрыть
         #modal-contact.modal.modal--contact(style="display: none")
             p.modal__title Заполните Ваши данные, и&nbsp;наши&nbsp;специалисты свяжутся с Вами:
             .modal__form
-                input(type="text" placeholder="Ваше имя").modal__input
-                input(type="text" placeholder="Ваш телефон").modal__input
+                input(type="text" placeholder="Ваше имя" name="name").modal__input
+                input(type="text" placeholder="Ваш телефон" name="phone").modal__input
                 button(type="submit").modal__button Получить консультацию
             span.modal__close Закрыть
         #modal-thanks.modal.modal--thanks(style="display: none")
@@ -133,5 +134,3 @@ html(lang="ru")
             p.modal__text Наши специалисты свяжутся с Вами в ближайшее время.
             span.modal__close Закрыть
         .scroll-to-top Наверх
-
-    script(src="./js/build.js")
